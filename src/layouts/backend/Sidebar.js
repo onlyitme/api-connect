@@ -24,7 +24,6 @@ const Sidebar = ()  => {
                 </div>
             </div>
         </nav>
-
     );
 }
 

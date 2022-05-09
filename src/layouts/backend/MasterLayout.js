@@ -6,6 +6,7 @@ import '../../assets/backend/js/scripts'
 
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
+
 import routes from "../../routes/routes";
 
 
@@ -32,11 +33,12 @@ const MasterLayout = () => {
                                             render={(props)=>(
                                                 <route.component {...props}/>
                                             )}
+
                                         />
                                     )
                                 )
                             })}
-                            <Redirect  from={'admin'} to={'/admin/dashboard'}/>
+                            <Redirect  from={'/admin'} to={'/admin/dashboard'}/>
                         </Switch>
                     </main>
                 </div>
